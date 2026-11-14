@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="MarsOutpost.Runtime.csproj" />
+  <Project Path="MarsOutpost.Tests.EditMode.csproj" />
+  <Project Path="MarsOutpost.Tests.PlayMode.csproj" />
+  <Project Path="MarsOutpost.Editor.csproj" />
+</Solution>

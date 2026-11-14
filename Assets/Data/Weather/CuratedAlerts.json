@@ -1,0 +1,83 @@
+{
+  "alerts": [
+    {
+      "id": "flr-training-01",
+      "eventType": "FLR",
+      "eventName": "Solar flare",
+      "alertCode": "TRAINING ALERT FLR-01",
+      "headline": "A bright burst from the Sun",
+      "summary": "A solar flare was spotted. It can affect radio signals and add to space radiation. The crew is inside.",
+      "sourceNote": "FLR is a real DONKI event type. This alert is fictional.",
+      "choices": [
+        {
+          "id": "shelter",
+          "title": "Shelter and watch",
+          "description": "Pause outdoor work. Keep the crew inside and check the radiation meter.",
+          "headline": "Crew sheltered",
+          "feedback": "Good call. The crew limits exposure and watches the meter while the flare is active.",
+          "learningNote": "A solar flare (FLR) is not a coronal mass ejection (CME). An Earth geomagnetic storm (GST) is a different hazard - not a direct Mars-surface alarm. This training scenario is not operational safety advice.",
+          "correct": true,
+          "changes": [
+            {
+              "resourceId": "safety",
+              "delta": 12,
+              "reason": "The crew stays inside and monitors the radiation meter."
+            },
+            {
+              "resourceId": "power",
+              "delta": -6,
+              "reason": "Safe mode uses a little extra power."
+            },
+            {
+              "resourceId": "science",
+              "delta": 10,
+              "reason": "Recording the flare adds to the training log."
+            }
+          ]
+        },
+        {
+          "id": "outside",
+          "title": "Send a crew outside",
+          "description": "Take photos from the rover deck during the flare.",
+          "headline": "Risky plan",
+          "feedback": "Not this time. Sending the crew outside adds exposure while the flare is active.",
+          "learningNote": "A cautious training plan limits exposure. This game does not give real radiation procedures.",
+          "correct": false,
+          "changes": [
+            {
+              "resourceId": "safety",
+              "delta": -14,
+              "reason": "The crew goes outside during the flare."
+            },
+            {
+              "resourceId": "power",
+              "delta": -2,
+              "reason": "The rover drive uses a little power."
+            }
+          ]
+        },
+        {
+          "id": "lights-off",
+          "title": "Switch off the greenhouse",
+          "description": "Save power by turning off the plant lights.",
+          "headline": "Plan misses the hazard",
+          "feedback": "This does not address the flare. Greenhouse lights are not the source of the radiation risk.",
+          "learningNote": "A plan should match the hazard. Turning off plant lights saves power but does not shelter the crew from a solar flare.",
+          "correct": false,
+          "changes": [
+            {
+              "resourceId": "power",
+              "delta": 6,
+              "reason": "Turning off the plant lights saves power."
+            },
+            {
+              "resourceId": "safety",
+              "delta": -3,
+              "reason": "The plan leaves the crew exposed to the flare."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

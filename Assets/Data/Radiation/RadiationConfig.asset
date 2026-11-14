@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b612c0851312f743b7d46148e4069dd, type: 3}
+  m_Name: RadiationConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Radiation.RadiationConfig
+  screenTitle: Radiation Drill
+  tagline: Monitor a simulated alert and activate shielding.
+  instructionTitle: Radiation Drill
+  instructionBody: 'A simulated radiation alert will begin in one of the ship''s rooms. Read the detector, talk to the Safety Officer, then reach the Radiation Control Room and activate shielding.
+
+
+    The red warning area is a game visualization, not visible radiation. The detector numbers are simulated game readings. This drill is not real radiation-safety training.'
+  startButtonLabel: Start Drill
+  objectiveLabel: OBJECTIVE
+  objectiveTalk: Talk to the Safety Officer.
+  objectiveReach: Reach the Radiation Control Room and activate shielding.
+  objectiveDone: Shielding active. Simulated exposure reduced.
+  controlsHint: Drag the joystick to move. Tap the action button when it appears.
+  legend: Red area = game visualization of a simulated warning zone. It is not visible radiation.
+  detectorCaption: SIMULATED READING
+  exposureCaption: SIMULATED EXPOSURE
+  detectorSafe: SAFE
+  detectorWarning: WARNING
+  detectorHigh: HIGH
+  warningReading: 25
+  highReading: 60
+  npcName: Safety Officer
+  npcPrompt: Talk to the Safety Officer
+  dialoguePages:
+  - Hi, Junior Astronaut. A simulated radiation alert is running on the ship. I can explain what radiation is and how our detector works. Ready?
+  - Radiation is energy that travels as waves or particles. We meet some radiation in everyday life. Too much exposure can damage cells and make people sick, so astronauts monitor it carefully.
+  - The red warning area on your display is a game visualization of a simulated hazard. It is not something you can see. The detector shows a simulated reading, not a real measurement.
+  - When the reading rises, put distance between yourself and the warning area, and use shielding. In this drill, the Radiation Control Room can activate shielding to reduce exposure.
+  - Go to the Radiation Control Room and activate shielding. The red area should shrink as the simulated exposure is reduced. This is a practice drill, so take your time.
+  dialogueContinue: Continue
+  dialogueFinish: Finish
+  dialogueClose: Skip
+  dialogueHint: Tap Continue, or press Space / Enter.
+  controlPrompt: Activate Shielding
+  shieldMessage: Shielding active. The simulated warning area is shrinking and exposure is being reduced.
+  shieldUnavailable: The shielding control is ready. Wait for the simulated alert before activating it.
+  exposureLimitMessage: The simulated exposure meter filled, so this practice run returned you to the crew hub. Watch the detector and move away from the red warning area sooner. You can try again.
+  debriefHeadline: Radiation Drill complete
+  debriefSummary: You talked with the Safety Officer, watched the simulated detector, reached the Radiation Control Room, and activated shielding.
+  debriefLearning: '<b>What radiation is:</b> energy travelling as waves or particles.
+
+    <b>Why we monitor it:</b> a detector tracks exposure so the crew can act before it gets too high.
+
+    <b>How shielding helps:</b> shielding and distance reduce simulated exposure. The warning area, readings, and timing in this drill are game values, not real measurements or safety training.'
+  choiceId: shielding-active
+  activityId: radiation
+  firstAlertDelay: 5
+  spreadSpeed: 0.35
+  maxRadius: 4.8
+  containmentSpeed: 4
+  resultDelay: 1.2
+  maxExposure: 100
+  exposureGainPerSecond: 14
+  exposureRecoveryPerSecond: 8
+  toastSeconds: 4.5
+  safeColor: {r: 0.29, g: 0.87, b: 0.5, a: 1}
+  warningColor: {r: 0.98, g: 0.75, b: 0.14, a: 1}
+  highColor: {r: 0.97, g: 0.44, b: 0.44, a: 1}
+  hazardColor: {r: 1, g: 0.12, b: 0.12, a: 1}

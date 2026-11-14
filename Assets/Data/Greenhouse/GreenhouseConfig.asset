@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9889ae918e23643ae2925b182232c7, type: 3}
+  m_Name: GreenhouseConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Greenhouse.GreenhouseExperimentConfig
+  screenTitle: Plant Lab
+  tagline: Run a fair red-light trial with Mars-like seedlings.
+  chamberTitle: GROWTH CHAMBER
+  environmentLabel: MARS-LIKE GRAVITY
+  trayALabel: TRAY A
+  trayBLabel: TRAY B
+  chooseTreatmentLabel: Choose a treatment
+  redTreatmentLabel: RED LIGHT
+  darkTreatmentLabel: DARK CONTROL
+  redButtonLabel: Red
+  darkButtonLabel: Dark
+  notebookTitle: LAB NOTEBOOK
+  setupHeader: STEP 1 - SET THE TREATMENTS
+  setupBody: Give one tray red light. Keep the other dark as the control. Change only the light.
+  setupIncomplete: A fair test uses one red-light tray and one dark control.
+  setupBothRed: Both trays have red light. One must stay dark as the control.
+  setupBothDark: Both trays are dark. One needs red light for the treatment.
+  setupReadyFormat: 'Fair test ready: {0} red light, {1} dark control.'
+  runLabel: Run light trial
+  runCostFormat: Uses {0} Power
+  runPowerCost: 8
+  observationsHeader: STEP 2 - COMPARE THE SIGNALS
+  observationsBody: Both trays had the same seedlings and Mars-like gravity. Only the light changed.
+  redObservation:
+    growthLabel: CELL GROWTH
+    growthValue: Recovery signal
+    growthTone: 0
+    stressLabel: STRESS RESPONSE
+    stressValue: Active
+    stressTone: 1
+  darkObservation:
+    growthLabel: CELL GROWTH
+    growthValue: Reduced signal
+    growthTone: 2
+    stressLabel: STRESS RESPONSE
+    stressValue: Active
+    stressTone: 1
+  claimsHeader: STEP 3 - CHOOSE A CAREFUL CLAIM
+  claimPrompt: Which sentence is supported by the study?
+  claimHint: Tap one claim. Then log your finding.
+  confirmLabel: Log finding
+  selectClaimLabel: Choose a claim first
+  completedLabel: Trial complete
+  claims:
+  - id: red-light-recovery
+    headline: Careful claim logged
+    statement: Red light helped cell-growth signals recover.
+    feedback: Red light went with cell-growth recovery.
+    learningNote: 'Careful claim: OSD-314 measured cell growth, cell division, and gene activity in young Arabidopsis seedlings - not food yield, oxygen output, or a farm-ready recipe.'
+    matchesStudy: 1
+    changes:
+    - resourceId: science
+      delta: 18
+      reason: A careful claim earned science progress.
+  - id: food-doubling
+    headline: Claim goes too far
+    statement: Red light will double Mars food.
+    feedback: The study did not measure food yield.
+    learningNote: The study did not measure food production. A careful claim stays inside what the study actually measured.
+    matchesStudy: 0
+    changes: []
+  - id: darkness-wins
+    headline: Claim checked
+    statement: Darkness helped the seedlings more.
+    feedback: The dark group did not show that recovery.
+    learningNote: 'Check the direction: in OSD-314, the red-light group showed recovery at Mars-like gravity. The dark group did not.'
+    matchesStudy: 0
+    changes: []
+  simulationNote: Inspired by NASA OSDR study OSD-314. Trial signals, power cost, and science points are invented for the game - not NASA measurements or farm predictions.

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f9c881c2954ef4c9284a98d2e72a84, type: 3}
+  m_Name: Placeholder_Weather
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.PlaceholderActivityOutcome
+  activityId: weather
+  headline: Training alert answered
+  summary: 'You chose a cautious response to the fictional training alert: the crew pauses outdoor work and records the event. Safety improves, and the log adds science progress.'
+  learningNote: DONKI event types are real, but this alert is invented for practice. Different event types are not the same hazard. Check NOAA SWPC for official forecasts.
+  changes:
+  - resourceId: safety
+    delta: 10
+    reason: A cautious response protects the crew.
+  - resourceId: power
+    delta: -5
+    reason: Safe mode uses a little power.
+  - resourceId: science
+    delta: 5
+    reason: Recording the event adds data to the science log.

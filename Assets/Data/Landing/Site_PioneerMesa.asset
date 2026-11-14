@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972fbca682d9d4046ac0f42ec4c23ea5, type: 3}
+  m_Name: Site_PioneerMesa
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Landing.LandingSiteDefinition
+  id: pioneer-mesa
+  displayName: Pioneer Mesa
+  region: Southern highland
+  mapPosition: {x: 0.78, y: 0.65}
+  slope:
+    label: Steep
+    tone: 2
+  dust:
+    label: Low
+    tone: 0
+  distance:
+    label: Mid
+    tone: 1
+  description: Layered cliffs and a strong science target. The descent is steep.
+  resultSummary: 'You chose Pioneer Mesa: layered cliffs and a strong science target, balanced against a steep descent.'
+  learningNote: The science value here is a game reward, not a NASA measurement. Real missions must prove a site is safe before choosing it.
+  changes:
+  - resourceId: power
+    delta: -15
+    reason: The descent and climb use extra power.
+  - resourceId: safety
+    delta: -5
+    reason: Steep ground narrows the landing margin.
+  - resourceId: science
+    delta: 20
+    reason: The layered cliffs are a rich sample target.

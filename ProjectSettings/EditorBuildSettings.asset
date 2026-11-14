@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/00_MainMenu.unity
+    guid: fa0189732731233468b3daedb19af51f
+  - enabled: 1
+    path: Assets/Scenes/01_MissionHub.unity
+    guid: 862223dddabfbf34481884113e2fad1c
+  - enabled: 1
+    path: Assets/Scenes/02_LandingSite.unity
+    guid: ae6718c72a76d9349b3439cd1be76332
+  - enabled: 1
+    path: Assets/Scenes/03_Greenhouse.unity
+    guid: babd63d08b6713d4e92024aede111c1d
+  - enabled: 1
+    path: Assets/Scenes/04_SpaceWeather.unity
+    guid: 49dcfc173c2d84f4ea5cd45c890c00d0
+  - enabled: 1
+    path: Assets/Scenes/05_Debrief.unity
+    guid: 220dc99d49a22444ea0c07d27d450099
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/07_Radiation.unity
+    guid: 256de1cd47a49b8498d064838d3a4a26
+  m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

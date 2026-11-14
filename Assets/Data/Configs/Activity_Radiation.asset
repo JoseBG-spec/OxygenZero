@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd909a3726f65a42a788984c2369af3, type: 3}
+  m_Name: Activity_Radiation
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.ActivityDefinition
+  id: radiation
+  displayName: Radiation Drill
+  tagline: Monitor a simulated alert and activate shielding.
+  description: A simulated alert is spreading through the ship. Read the detector, talk to the Safety Officer, then contain it from the Radiation Control Room.
+  icon: {fileID: 0}
+  hubOrder: 3
+  estimatedMinutes: 4
+  requiredForMission: 0
+  simulationNote: This drill is a game simulation, not real radiation-safety training or a real measurement.
+  sceneName: 07_Radiation
+  instructionTitle: Radiation Drill
+  instructionBody: The red area is a game visualization of a simulated warning zone. Read the simulated detector, talk to the Safety Officer, then reach the Radiation Control Room and activate shielding.

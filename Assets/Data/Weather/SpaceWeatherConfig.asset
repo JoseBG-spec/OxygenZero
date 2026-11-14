@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d322caf0e2a1247ac6b1df06507cf0, type: 3}
+  m_Name: SpaceWeatherConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Weather.SpaceWeatherConfig
+  screenTitle: Space Weather
+  tagline: Read the alert. Pick a cautious crew plan.
+  controlRoomTitle: SPACE WEATHER STATION
+  alertTag: TRAINING ALERT
+  decoderTitle: DONKI EVENT TYPES
+  decoderHint: These names are different events, not one hazard.
+  compareLabel: Compare alert types
+  backToAlertLabel: Back to alert
+  decisionTitle: CREW PLAN
+  decisionPrompt: Which crew plan fits this training alert?
+  planHint: Tap one plan. Then send it to the crew.
+  selectedPlanFormat: 'Selected: {0}. Ready to send.'
+  choosePlanLabel: Choose a crew plan
+  confirmLabel: Send crew plan
+  completedLabel: Crew plan sent
+  completedPlanFormat: 'Training complete: {0}.'
+  curatedAlertsJson: {fileID: 4900000, guid: de674c1a896d84e46b92a64980107f4f, type: 3}
+  fallbackAlert:
+    id: flr-fallback
+    eventType: FLR
+    eventName: Solar flare
+    alertCode: TRAINING ALERT FLR-00
+    headline: A bright burst from the Sun
+    summary: A solar flare is the training alert. The crew is inside. Choose a cautious plan.
+    sourceNote: Built-in fallback alert. This is fictional training, not live data.
+    choices:
+    - id: shelter
+      title: Shelter and watch
+      description: Pause outdoor work. Keep the crew inside and check the radiation meter.
+      headline: Crew sheltered
+      feedback: Good call. The crew limits exposure and watches the meter while the flare is active.
+      learningNote: A solar flare (FLR) is not a coronal mass ejection (CME). An Earth geomagnetic storm (GST) is a different hazard, not a direct Mars-surface alarm. This is fictional training, not operational safety advice.
+      correct: 1
+      changes:
+      - resourceId: safety
+        delta: 12
+        reason: The crew stays inside and monitors the radiation meter.
+      - resourceId: power
+        delta: -6
+        reason: Safe mode uses a little extra power.
+      - resourceId: science
+        delta: 10
+        reason: Recording the flare adds to the training log.
+    - id: outside
+      title: Send a crew outside
+      description: Take photos from the rover deck during the flare.
+      headline: Risky plan
+      feedback: Not this time. Sending the crew outside adds exposure while the flare is active.
+      learningNote: A cautious training plan limits exposure. This game does not give real radiation procedures.
+      correct: 0
+      changes:
+      - resourceId: safety
+        delta: -14
+        reason: The crew goes outside during the flare.
+      - resourceId: power
+        delta: -2
+        reason: The rover drive uses a little power.
+    - id: lights-off
+      title: Switch off the greenhouse
+      description: Save power by turning off the plant lights.
+      headline: Plan misses the hazard
+      feedback: This does not address the flare. Greenhouse lights are not the source of the radiation risk.
+      learningNote: A plan should match the hazard. Turning off plant lights saves power but does not shelter the crew from a solar flare.
+      correct: 0
+      changes:
+      - resourceId: power
+        delta: 6
+        reason: Turning off the plant lights saves power.
+      - resourceId: safety
+        delta: -3
+        reason: The plan leaves the crew exposed to the flare.
+  eventTypes:
+  - code: FLR
+    name: Solar flare
+    description: A sudden bright burst from the Sun. This alert is a flare.
+  - code: SEP
+    name: Solar particles
+    description: Fast solar particles that can raise radiation risk in space.
+  - code: CME
+    name: Sun eruption
+    description: A huge cloud of solar plasma. It can arrive hours or days later.
+  - code: GST
+    name: Earth storm
+    description: An Earth geomagnetic-storm forecast. Not a direct Mars-surface alarm.
+  simulationNote: Using DONKI event-type names. Alert, plans, costs, and scores are invented for the game - not a forecast, live data, or operational safety advice.

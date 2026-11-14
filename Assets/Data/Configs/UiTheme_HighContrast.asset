@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6c6fa30f0d30445996332d2ed2cbe2, type: 3}
+  m_Name: UiTheme_HighContrast
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.UiTheme
+  background: {r: 0, g: 0, b: 0, a: 1}
+  backgroundAccent: {r: 0.06, g: 0.06, b: 0.06, a: 1}
+  panel: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+  panelAlt: {r: 0.16, g: 0.16, b: 0.16, a: 1}
+  primary: {r: 1, g: 0.9, b: 0.1, a: 1}
+  primaryText: {r: 0, g: 0, b: 0, a: 1}
+  textPrimary: {r: 1, g: 1, b: 1, a: 1}
+  textSecondary: {r: 0.92, g: 0.92, b: 0.92, a: 1}
+  success: {r: 0.3, g: 1, b: 0.4, a: 1}
+  warning: {r: 1, g: 0.85, b: 0.2, a: 1}
+  danger: {r: 1, g: 0.35, b: 0.35, a: 1}
+  focusRing: {r: 1, g: 1, b: 1, a: 1}
+  font: {fileID: 11400000, guid: 5547264c8367cd14e9430188742e639d, type: 2}
+  titleSize: 96
+  headingSize: 46
+  bodySize: 28
+  buttonSize: 32
+  captionSize: 21
+  roundedPanel: {fileID: 21300000, guid: b354f7d380f714f479ffa7dfe9454525, type: 3}
+  roundedButton: {fileID: 21300000, guid: 0bd6b6bac4bdf7644a49fef3a8c0eba6, type: 3}
+  roundedPill: {fileID: 21300000, guid: 28c3f39d3011353449ad23751e431082, type: 3}
+  circle: {fileID: 21300000, guid: 284d8787104dce44f953f6d37000ca64, type: 3}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd909a3726f65a42a788984c2369af3, type: 3}
+  m_Name: Activity_Greenhouse
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.ActivityDefinition
+  id: greenhouse
+  displayName: Plant Lab
+  tagline: Run a fair red-light trial with seedlings.
+  description: Compare red light with a dark control and choose a careful claim.
+  icon: {fileID: 0}
+  hubOrder: 1
+  estimatedMinutes: 2
+  requiredForMission: 1
+  simulationNote: Inspired by NASA OSDR study OSD-314. Trial signals, lamp power, and science points are invented game values - not NASA measurements or farm predictions.
+  sceneName: 03_Greenhouse
+  instructionTitle: Set up a fair plant-light trial
+  instructionBody: 'The greenhouse has young Arabidopsis seedlings in Mars-like gravity. Give one tray red light and keep the other dark as the control.
+
+
+    NASA OSDR study OSD-314 compared 6-day-old seedlings in microgravity and Mars-like gravity with red light or darkness. At Mars-like gravity, red light accompanied recovery of cell-growth parameters. The study measured cell growth, cell division, and gene activity - not food yield or oxygen output.
+
+
+    Set up the trial, compare the simulated signals, then choose the sentence the study can support.'

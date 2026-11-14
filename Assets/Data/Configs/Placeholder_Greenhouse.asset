@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f9c881c2954ef4c9284a98d2e72a84, type: 3}
+  m_Name: Placeholder_Greenhouse
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.PlaceholderActivityOutcome
+  activityId: greenhouse
+  headline: Plant treatment logged
+  summary: You set up a red-light tray and a dark control tray for the seedling experiment. The lamps use power, and the comparison adds science progress.
+  learningNote: OSD-314 studied 6-day-old Arabidopsis seedlings in microgravity and Mars-like gravity with red light. This game does not predict real plant growth, food yield, or oxygen output.
+  changes:
+  - resourceId: power
+    delta: -15
+    reason: The plant lamps use power.
+  - resourceId: science
+    delta: 15
+    reason: The light-versus-dark comparison adds science data.

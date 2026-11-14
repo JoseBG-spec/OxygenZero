@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd909a3726f65a42a788984c2369af3, type: 3}
+  m_Name: Activity_Landing
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.ActivityDefinition
+  id: landing
+  displayName: Landing Site
+  tagline: Choose where the crew touches down.
+  description: Compare hazard tags on a fictional training map and pick a landing site.
+  icon: {fileID: 0}
+  hubOrder: 0
+  estimatedMinutes: 2
+  requiredForMission: 1
+  simulationNote: Landing hazard tags and resource changes are game labels. The training map is fictional art - not NASA or Mars Trek data.
+  sceneName: 02_LandingSite
+  instructionTitle: Pick a landing site
+  instructionBody: 'Study the fictional training map. Tap a numbered marker to compare three hazard tags: slope, dust, and distance from the outpost.
+
+
+    There is no single perfect site. A short drive saves power, a gentle slope protects the crew, and a site with interesting geology can add science progress.
+
+
+    Pick the trade-off your crew can live with, then confirm one site.'

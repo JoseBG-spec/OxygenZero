@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972fbca682d9d4046ac0f42ec4c23ea5, type: 3}
+  m_Name: Site_RustValley
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Landing.LandingSiteDefinition
+  id: rust-valley
+  displayName: Rust Valley
+  region: Equatorial valley
+  mapPosition: {x: 0.5, y: 0.42}
+  slope:
+    label: Moderate
+    tone: 1
+  dust:
+    label: Low
+    tone: 0
+  distance:
+    label: Near
+    tone: 0
+  description: A short, low-dust route close to the outpost. The ground is uneven.
+  resultSummary: 'You chose Rust Valley: a short, low-dust route close to the outpost, with a moderate slope to watch.'
+  learningNote: Real site selection would use detailed terrain and engineering data. Here, the hazard tags are simplified game labels, not measurements.
+  changes:
+  - resourceId: power
+    delta: -8
+    reason: The short rover route saves power.
+  - resourceId: safety
+    delta: 2
+    reason: The site is close to the outpost, though the ground is uneven.
+  - resourceId: science
+    delta: 10
+    reason: The valley survey adds a useful data set.

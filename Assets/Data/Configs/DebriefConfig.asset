@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aca7fe311a4bb44afcab9579a29102, type: 3}
+  m_Name: DebriefConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.DebriefConfig
+  reportTitle: Mission Report
+  intro: Here is how your junior astronaut training mission went.
+  sources: 'NASA OSDR study OSD-314: ''Adaptive response of Arabidopsis seedlings in microgravity and Mars reduced gravity environment is enhanced by red light photostimulation'' (Villacampa et al., International Journal of Molecular Sciences, 2021; doi:10.3390/ijms22020899).
+
+
+    NASA CCMC DONKI documentation for space-weather event types and API terms. DONKI data is research and prototyping quality; NOAA SWPC is the official forecast source.
+
+
+    NASA Mars Trek (trek.nasa.gov/mars) is the reference for future real map layers. The current landing map is a fictional training map, not Mars Trek data.'
+  notNasaNote: This game is a learning simulation, not an official NASA product. Game values, landing sites, and space-weather alerts are invented for play.
+  bands:
+  - title: Mission Complete
+    message: Your crew finished the training mission and brought home a report. Try again to compare choices!
+    minimumScience: 0
+    color: {r: 0.29, g: 0.79, b: 0.94, a: 1}
+  - title: Science Started
+    message: You collected useful practice data. Every careful choice adds to the crew's science story.
+    minimumScience: 10
+    color: {r: 1, g: 0.72, b: 0.16, a: 1}
+  - title: Junior Researcher
+    message: Excellent work! You compared options, explained your choices, and filled the science log.
+    minimumScience: 20
+    color: {r: 0.29, g: 0.87, b: 0.5, a: 1}
+  replayLabel: Play Again
+  menuLabel: Main Menu

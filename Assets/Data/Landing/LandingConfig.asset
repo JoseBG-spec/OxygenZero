@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145b78aaae431b4abe113a5d60b6608, type: 3}
+  m_Name: LandingConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Landing.LandingMissionConfig
+  screenTitle: Landing Site
+  tagline: Compare three fictional sites. There is no single perfect choice.
+  prompt: Tap a numbered marker to compare its slope, dust, and distance tags.
+  selectedHeader: SITE DETAILS
+  mapCaption: FICTIONAL TRAINING MAP - not Mars Trek data
+  confirmLabel: Confirm landing site
+  sites:
+  - {fileID: 11400000, guid: 0d92ec303b0f6de479aac2d9649e8dcf, type: 2}
+  - {fileID: 11400000, guid: c527882838076984d9177631fc4098d4, type: 2}
+  - {fileID: 11400000, guid: 9662e8492eba56748ad513d8080c2dd5, type: 2}

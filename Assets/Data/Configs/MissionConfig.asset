@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc336093000839b4db0b99ad1f8aac0a, type: 3}
+  m_Name: MissionConfig
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.MissionConfig
+  gameTitle: Mars Outpost
+  subtitle: Junior Astronaut Training
+  missionCode: TRAINING MISSION 01
+  howToPlayTitle: How to Play
+  howToPlayBody: '1. Tap Start Mission.
+
+    2. Choose a training step. The Radiation Drill is optional.
+
+    3. Read the situation, make a choice, and check the result card.
+
+    4. Finish the three required steps, then open the Mission Report.
+
+
+    The numbers are game values, not NASA measurements. There is no single perfect mission - the report explains what each choice changed.'
+  introHeadline: Welcome, Junior Astronaut!
+  introBody: 'Your crew is setting up a practice outpost on Mars. Pick a landing site, run a plant experiment, and answer a space-weather alert. Every choice changes Power, Crew Safety, and Science Progress.
+
+
+    Optional extra training: the Radiation Drill lets you practice reading a simulated detector and activating shielding.'
+  simulationDisclaimer: Training simulation. Resources, costs, and results are invented for the game - not NASA measurements, procedures, or live data.
+  credits: 'Inspired by NASA open science resources: OSDR study OSD-314, the DONKI space-weather notification system, and Mars Trek. The landing map is fictional placeholder art, not Mars Trek data. This game is not an official NASA product and is not endorsed by NASA.'
+  resources:
+  - {fileID: 11400000, guid: 6ef0423166b9fe9419e215fa0a88e799, type: 2}
+  - {fileID: 11400000, guid: a9692434d7f81f045b4633d0f9df1e8e, type: 2}
+  - {fileID: 11400000, guid: 997ee57ade9b24148a42f44ad65f1a9d, type: 2}
+  activities:
+  - {fileID: 11400000, guid: 08901088edc8c0b4aa424cdc46d24540, type: 2}
+  - {fileID: 11400000, guid: f1404f40d0e78af4485c1923f1de026d, type: 2}
+  - {fileID: 11400000, guid: c06135e5b7b691642a5b6df65751ca60, type: 2}
+  - {fileID: 11400000, guid: 731f8024e9151c843bb837fb9010d865, type: 2}
+  debrief: {fileID: 11400000, guid: b598b9ab0bca45f40a938fa668c29391, type: 2}
+  theme: {fileID: 11400000, guid: 058f48e5719a6b84ca93efc242ce68ec, type: 2}
+  highContrastTheme: {fileID: 11400000, guid: 9aff4b0884fd7cb418d1e734b7a64fae, type: 2}
+  mainMenuScene: 00_MainMenu
+  hubScene: 01_MissionHub
+  debriefScene: 05_Debrief
+  scienceTarget: 20
+  allowReplayCompletedActivities: 0

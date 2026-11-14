@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd909a3726f65a42a788984c2369af3, type: 3}
+  m_Name: Activity_Weather
+  m_EditorClassIdentifier: MarsOutpost.Runtime::MarsOutpost.Core.ActivityDefinition
+  id: weather
+  displayName: Space Weather
+  tagline: Read the alert. Pick a cautious crew plan.
+  description: Read a fictional DONKI-style training alert and choose a cautious crew response.
+  icon: {fileID: 0}
+  hubOrder: 2
+  estimatedMinutes: 2
+  requiredForMission: 1
+  simulationNote: Training scenario using real DONKI event-type names. Alert, plans, costs, and scores are invented for the game - not a forecast, live data, or operational safety advice.
+  sceneName: 04_SpaceWeather
+  instructionTitle: Read the space-weather alert
+  instructionBody: 'A fictional training alert arrives from the space-weather station. Read the event type and the plain-language note, then choose the crew plan that fits the hazard.
+
+
+    NASA DONKI uses event-type names such as solar flares (FLR), solar energetic particles (SEP), coronal mass ejections (CME), and geomagnetic storms (GST). They are not all the same hazard. This activity uses one FLR training alert; compare the others in the decoder.
+
+
+    Choose one plan and send it to the crew. The result explains what changed and why.'
